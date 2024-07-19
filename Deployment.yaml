@@ -22,7 +22,7 @@ pipeline:
                       app: poojaimages
                   spec:
                     containers:
-                      - name: search-services
+                      - name: config-services
                         image: \${NEXUS_DOCKER_REPO}/Poojaimages:1.0.1
                         ports:
                           - containerPort: 9097
