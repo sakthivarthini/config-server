@@ -25,7 +25,7 @@ pipeline:
                       - name: search-services
                         image: \${NEXUS_DOCKER_REPO}/Poojaimages:1.0.1
                         ports:
-                          - containerPort: 8086
+                          - containerPort: 9097
               """
               writeFile file: 'k0s-deployment.yaml', text: deploymentYamlContent
 
